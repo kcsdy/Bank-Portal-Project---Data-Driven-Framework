@@ -1,0 +1,11 @@
+testcases\openAccountTest.class
+base\TestBase.class
+testcases\ValidateCustomerEntryTest.class
+testcases\addNewCustomerTest.class
+testcases\BankManagerLoginTest.class
+listeners\CustomListeners.class
+utilities\ExcelReader.class
+rough\TestProperties.class
+testcases\CustomerDepositTest.class
+testcases\customerLoginTest.class
+utilities\TestUtil.class

@@ -1,0 +1,464 @@
+<html>
+<head>
+<title>TestNG:  XYZ Bank Portal Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>XYZ Bank Portal Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 16 13:18:41 BST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5942 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.BankManagerLoginTest.loginAsBankManager()'><b>loginAsBankManager</b><br>Test class: testcases.BankManagerLoginTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace750795985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace750795985'><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>testcases.BankManagerLoginTest@10027fc9</td></tr>
+<tr>
+<td title='testcases.ValidateCustomerEntryTest.customerEnteredExistanceTest()'><b>customerEnteredExistanceTest</b><br>Test class: testcases.ValidateCustomerEntryTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace632627844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace632627844'><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.ValidateCustomerEntryTest@f31c0c6</td></tr>
+<tr>
+<td title='testcases.AddNewCustomerTest.addNewCustomer()'><b>addNewCustomer</b><br>Test class: testcases.AddNewCustomerTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace874111547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace874111547'><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.AddNewCustomerTest@5a021cb9</td></tr>
+<tr>
+<td title='testcases.CustomerLoginTest.successfulCustomerLoginTest()'><b>successfulCustomerLoginTest</b><br>Test class: testcases.CustomerLoginTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2115597658", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2115597658'><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.CustomerLoginTest@b93aad</td></tr>
+<tr>
+<td title='testcases.ValidateCustomerEntryTest.searchBoxWorkingTest()'><b>searchBoxWorkingTest</b><br>Test class: testcases.ValidateCustomerEntryTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1840217399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1840217399'><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.ValidateCustomerEntryTest@f31c0c6</td></tr>
+<tr>
+<td title='testcases.OpenAccountTest.openAccount()'><b>openAccount</b><br>Test class: testcases.OpenAccountTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1035563730", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1035563730'><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.OpenAccountTest@51768776</td></tr>
+<tr>
+<td title='testcases.CustomerLoginTest.NavigateToHomeScreenTest()'><b>NavigateToHomeScreenTest</b><br>Test class: testcases.CustomerLoginTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace281049997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace281049997'><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.CustomerLoginTest@b93aad</td></tr>
+<tr>
+<td title='testcases.CustomerLoginTest.customerLoginTest()'><b>customerLoginTest</b><br>Test class: testcases.CustomerLoginTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1731795367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1731795367'><pre>java.lang.IllegalArgumentException: Parameter &apos;destFile&apos; is not a file: C:\Users\ASUS\eclipse-workspace\DataDrivenFrameWork\target
+	at org.apache.commons.io.FileUtils.requireFile(FileUtils.java:2819)
+	at org.apache.commons.io.FileUtils.requireFileIfExists(FileUtils.java:2848)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:803)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:834)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:742)
+	at utilities.TestUtil.caturingScreenshots(TestUtil.java:29)
+	at listeners.CustomListeners.onTestSuccess(CustomListeners.java:57)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.CustomerLoginTest@b93aad</td></tr>
+</table><p>
+</body>
+</html>

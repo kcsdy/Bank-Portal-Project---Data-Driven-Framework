@@ -1,0 +1,9 @@
+21:19:48,184 DEBUG devpinoyLogger:52 - config file loaded !!!
+21:19:48,187 DEBUG devpinoyLogger:67 - ObjectReference file loaded !!!
+21:19:50,586 DEBUG devpinoyLogger:75 - Chrome Launched !!!
+21:19:53,168 DEBUG devpinoyLogger:84 - Navigated to =https://www.way2automation.com/angularjs-protractor/banking/#/login
+21:19:53,206 DEBUG devpinoyLogger:86 - Chrome Window maximized
+21:19:53,287 DEBUG devpinoyLogger:14 - Inside Login Test
+21:19:56,671 DEBUG devpinoyLogger:19 - Login Successfully Executed
+21:19:56,690 DEBUG devpinoyLogger:16 - Inside Add New Customer Test
+21:20:01,045 DEBUG devpinoyLogger:110 - test execution completed

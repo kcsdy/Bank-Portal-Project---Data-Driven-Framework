@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Deposit Login Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.594">
+  <properties />
+  
+  
+            <testcase name="depositVisibleInTransTest" time="0.611" classname="testcases.CustomerDepositTest" />
+                <testcase name="addDepositTest" time="1.983" classname="testcases.CustomerDepositTest" />
+      
+</testsuite>

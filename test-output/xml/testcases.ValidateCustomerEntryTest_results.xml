@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Validate Customer Entry Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.920">
+  <properties />
+  
+  
+            <testcase name="searchBoxWorkingTest" time="0.078" classname="testcases.ValidateCustomerEntryTest" />
+                <testcase name="customerEnteredExistanceTest" time="0.842" classname="testcases.ValidateCustomerEntryTest" />
+      
+</testsuite>
