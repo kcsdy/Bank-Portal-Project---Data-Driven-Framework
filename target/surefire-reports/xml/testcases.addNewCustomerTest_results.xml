@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="1"
-           time="1.439">
+           time="1.811">
   <properties />
   
             <testcase name="AddNewCustomerTest" time="0.0" classname="testcases.addNewCustomerTest">
           <skipped />
     </testcase>
   
-            <testcase name="AddNewCustomerTest" time="0.267" classname="testcases.addNewCustomerTest" />
-                <testcase name="AddNewCustomerTest" time="0.918" classname="testcases.addNewCustomerTest" />
-                <testcase name="AddNewCustomerTest" time="0.253" classname="testcases.addNewCustomerTest" />
+            <testcase name="AddNewCustomerTest" time="0.352" classname="testcases.addNewCustomerTest" />
+                <testcase name="AddNewCustomerTest" time="0.446" classname="testcases.addNewCustomerTest" />
+                <testcase name="AddNewCustomerTest" time="1.012" classname="testcases.addNewCustomerTest" />
       
 </testsuite>

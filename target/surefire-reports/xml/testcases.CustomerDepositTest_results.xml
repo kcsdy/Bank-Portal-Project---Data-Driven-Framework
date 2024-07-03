@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="2.675">
+           time="2.713">
   <properties />
   
   
-            <testcase name="addDepositTest" time="2.063" classname="testcases.CustomerDepositTest" />
-                <testcase name="depositVisibleInTransTest" time="0.612" classname="testcases.CustomerDepositTest" />
+            <testcase name="addDepositTest" time="2.066" classname="testcases.CustomerDepositTest" />
+                <testcase name="depositVisibleInTransTest" time="0.647" classname="testcases.CustomerDepositTest" />
       
 </testsuite>

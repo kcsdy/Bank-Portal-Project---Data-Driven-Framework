@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.980">
+           time="2.289">
   <properties />
   
   
-            <testcase name="searchBoxWorkingTest" time="0.108" classname="testcases.ValidateCustomerEntryTest" />
-                <testcase name="customerEnteredExistanceTest" time="0.872" classname="testcases.ValidateCustomerEntryTest" />
+            <testcase name="customerEnteredExistanceTest" time="2.190" classname="testcases.ValidateCustomerEntryTest" />
+                <testcase name="searchBoxWorkingTest" time="0.099" classname="testcases.ValidateCustomerEntryTest" />
       
 </testsuite>

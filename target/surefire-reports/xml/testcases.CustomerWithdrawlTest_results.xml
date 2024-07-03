@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.662">
+           time="0.682">
   <properties />
   
   
-            <testcase name="withdrawlAmtLessThanBalTest" time="0.662" classname="testcases.CustomerWithdrawlTest" />
+            <testcase name="withdrawlAmtLessThanBalTest" time="0.682" classname="testcases.CustomerWithdrawlTest" />
       
 </testsuite>
