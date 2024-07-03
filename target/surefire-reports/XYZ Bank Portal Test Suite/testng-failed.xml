@@ -17,4 +17,15 @@
       </class> <!-- testcases.addNewCustomerTest -->
     </classes>
   </test> <!-- Add New Customer Test(failed) -->
+  <test thread-count="5" name="Withdrawl Test(failed)" verbose="0">
+    <classes>
+      <class name="testcases.CustomerWithdrawlTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="withdrawlAmtEqualToBalTest"/>
+        </methods>
+      </class> <!-- testcases.CustomerWithdrawlTest -->
+    </classes>
+  </test> <!-- Withdrawl Test(failed) -->
 </suite> <!-- Failed suite [XYZ Bank Portal Test Suite] -->

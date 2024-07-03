@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.CustomerDepositTest">
+      <class name="testcases.CustomerWithdrawlTest">
         <methods>
-          <include name="addDepositTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="withdrawlAmtEqualToBalTest"/>
         </methods>
-      </class> <!-- testcases.CustomerDepositTest -->
+      </class> <!-- testcases.CustomerWithdrawlTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
