@@ -38,5 +38,8 @@
 			<class name="testcases.CustomerDepositTest" />
 		</classes>
 	</test>
+	<test name="Withdrawl Test"><classes>
+		<class name="testcases.CustomerWithdrawlTest"></class>
+	</classes></test>
 </suite> <!--
 Suite -->
