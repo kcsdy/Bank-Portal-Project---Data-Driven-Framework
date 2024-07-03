@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Withdrawl Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.662">
+  <properties />
+  
+  
+            <testcase name="withdrawlAmtLessThanBalTest" time="0.662" classname="testcases.CustomerWithdrawlTest" />
+      
+</testsuite>

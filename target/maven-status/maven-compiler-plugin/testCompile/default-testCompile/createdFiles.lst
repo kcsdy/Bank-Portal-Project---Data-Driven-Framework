@@ -1,3 +1,4 @@
+testcases\CustomerWithdrawlTest.class
 testcases\openAccountTest.class
 base\TestBase.class
 testcases\ValidateCustomerEntryTest.class

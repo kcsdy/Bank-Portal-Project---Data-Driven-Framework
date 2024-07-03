@@ -12,8 +12,13 @@ import utilities.TestUtil;
 public class CustomerWithdrawlTest extends TestBase{
 
 	@Test(dataProviderClass = TestUtil.class , dataProvider = "dp" )
-	public void withdrawlAmountLessThanBalanceTest(Hashtable<String,String> Data) {
+	public void withdrawlAmtLessThanBalTest(Hashtable<String,String> Data) {
 		
-		driver.findElement(By.xpath(ObjectReference.getProperty(""))).click();
+		
+		driver.findElement(By.xpath(ObjectReference.getProperty("transBackBtn"))).click();
+		driver.findElement(By.xpath(ObjectReference.getProperty("withdrawlBtn"))).click();
+		driver.findElement(By.xpath(ObjectReference.getProperty("inputField"))).sendKeys(Data.get("withdrawlAmount"));
+		driver.findElement(By.xpath(ObjectReference.getProperty("submitBtn"))).submit();
+		
 	}
 }
