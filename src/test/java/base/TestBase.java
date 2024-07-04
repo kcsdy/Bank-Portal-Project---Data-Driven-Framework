@@ -80,6 +80,7 @@ public class TestBase {
 			}
 			driver.get(config.getProperty("testUrl"));
 			log.debug("Navigated to =" + config.getProperty("testUrl"));
+			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 			log.debug("Chrome Window maximized");
 			driver.manage().timeouts()

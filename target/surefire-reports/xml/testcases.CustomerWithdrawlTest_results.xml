@@ -1,88 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Withdrawl Test"
-           tests="3"
-           failures="1"
+           tests="2"
+           failures="0"
            errors="0"
            skipped="0"
-           time="14.817">
+           time="1.537">
   <properties />
-            <testcase name="withdrawlAmtEqualToBalTest" time="10.065" classname="testcases.CustomerWithdrawlTest">
-                <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/div/div[2]/div/div[2]/strong[2]&quot;}
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb0839f08fea499e582766ddb9d6b503, findElement {value=/html/body/div/div/div[2]/div/div[2]/strong[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54109/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eb0839f08fea499e582766ddb9d6b503"
-              >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/div/div[2]/div/div[2]/strong[2]"}
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb0839f08fea499e582766ddb9d6b503, findElement {value=/html/body/div/div/div[2]/div/div[2]/strong[2], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54109/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eb0839f08fea499e582766ddb9d6b503
-  java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-  java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-  org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-  org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-  org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-  testcases.CustomerWithdrawlTest.withdrawlAmtEqualToBalTest(CustomerWithdrawlTest.java:39)
-  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.base/java.lang.reflect.Method.invoke(Method.java:568)
-  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-  org.testng.TestRunner.privateRun(TestRunner.java:739)
-  org.testng.TestRunner.run(TestRunner.java:614)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-  org.testng.SuiteRunner.run(SuiteRunner.java:312)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-  org.testng.TestNG.runSuites(TestNG.java:1112)
-  org.testng.TestNG.run(TestNG.java:1079)
-  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-  org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-  org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-      </failure>
-
-          </testcase>
   
   
-            <testcase name="withdrawlAmtMoreThanBalTest" time="3.072" classname="testcases.CustomerWithdrawlTest" />
-                <testcase name="withdrawlAmtLessThanBalTest" time="1.680" classname="testcases.CustomerWithdrawlTest" />
+            <testcase name="withdrawlAmtMoreThanBalTest" time="0.075" classname="testcases.CustomerWithdrawlTest" />
+                <testcase name="withdrawlAmtLessThanBalTest" time="1.462" classname="testcases.CustomerWithdrawlTest" />
       
 </testsuite>

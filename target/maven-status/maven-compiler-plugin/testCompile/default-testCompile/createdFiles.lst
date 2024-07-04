@@ -8,5 +8,7 @@ listeners\CustomListeners.class
 utilities\ExcelReader.class
 rough\TestProperties.class
 testcases\CustomerDepositTest.class
+testcases\LogoutTest.class
 testcases\customerLoginTest.class
+testcases\AccountExistTest.class
 utilities\TestUtil.class

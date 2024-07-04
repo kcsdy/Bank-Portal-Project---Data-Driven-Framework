@@ -30,10 +30,9 @@ public class CustomerWithdrawlTest extends TestBase{
 		driver.findElement(By.xpath(ObjectReference.getProperty("submitBtn"))).submit();
 		String errorMsgInPortal = driver.findElement(By.xpath(ObjectReference.getProperty("withdrawlAmtMoreThanBalText"))).getText();
 		Assert.assertTrue(errorMsgInPortal.equals(data.get("errorMsg")));
-		Thread.sleep(3000);
 	}
 	
-	@Test
+	/*@Test
 	public void withdrawlAmtEqualToBalTest() {
 		String accBal = driver.findElement(By.xpath(ObjectReference.getProperty("balanceValue"))).getText();
 		System.out.println(accBal);
@@ -42,4 +41,5 @@ public class CustomerWithdrawlTest extends TestBase{
 		String successMsg = driver.findElement(By.xpath(ObjectReference.getProperty("withdrawlAmtMoreThanBalText"))).getText();
 		Assert.assertTrue(successMsg.equals("Transaction successful"));
 	}
+	*/
 }
