@@ -48,5 +48,10 @@
 	<test name="No Account Test"><classes>
 		<class name="testcases.AccountExistTest"></class>		
 	</classes></test>
+	
+	<test name="Multi Account Id Test"><classes>
+		<class name="testcases.MultiAccountTest"></class>		
+	</classes></test>
+	
 </suite> <!--
 Suite -->

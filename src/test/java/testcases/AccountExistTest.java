@@ -19,9 +19,7 @@ public class AccountExistTest extends TestBase{
 		driver.findElement(By.xpath(ObjectReference.getProperty("loginBtn"))).click();
 		String noAccountText = driver.findElement(By.xpath(ObjectReference.getProperty("noAccountText"))).getText();
 		Assert.assertTrue(noAccountText.equals(data.get("noAccountText")));
-		Thread.sleep(4000);
 		driver.findElement(By.xpath(ObjectReference.getProperty("logoutBtn"))).click();
-		
 		
 	}
 }

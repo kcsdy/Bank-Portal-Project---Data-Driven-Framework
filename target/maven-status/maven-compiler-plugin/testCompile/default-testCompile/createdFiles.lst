@@ -7,6 +7,7 @@ testcases\BankManagerLoginTest.class
 listeners\CustomListeners.class
 utilities\ExcelReader.class
 rough\TestProperties.class
+testcases\MultiAccountTest.class
 testcases\CustomerDepositTest.class
 testcases\LogoutTest.class
 testcases\customerLoginTest.class

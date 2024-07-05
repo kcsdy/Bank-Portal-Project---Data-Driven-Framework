@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="7.306">
+           time="6.733">
   <properties />
   
   
-            <testcase name="NavigateToHomeScreenTest" time="0.066" classname="testcases.customerLoginTest" />
-                <testcase name="custLoginTest" time="4.216" classname="testcases.customerLoginTest" />
-                <testcase name="successfulCustomerLoginTest" time="3.024" classname="testcases.customerLoginTest" />
+            <testcase name="custLoginTest" time="3.642" classname="testcases.customerLoginTest" />
+                <testcase name="NavigateToHomeScreenTest" time="0.068" classname="testcases.customerLoginTest" />
+                <testcase name="successfulCustomerLoginTest" time="3.023" classname="testcases.customerLoginTest" />
       
 </testsuite>
