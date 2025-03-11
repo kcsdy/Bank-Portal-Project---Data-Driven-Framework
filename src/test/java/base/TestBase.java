@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -28,6 +29,7 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Properties config = new Properties();
 	public static Properties ObjectReference = new Properties();
+	public static ChromeOptions options = new ChromeOptions();
 	public static FileInputStream fis;
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public static ExcelReader excel = new ExcelReader(
@@ -69,7 +71,9 @@ public class TestBase {
 			}
 
 			if (config.getProperty("browser").equalsIgnoreCase("chrome")) {
-				driver = new ChromeDriver();
+				options.addArguments("--no-sandbox");
+				options.addArguments("--headless");
+				driver = new ChromeDriver(options);
 				log.debug("Chrome Launched !!!");
 			} else if (config.getProperty("browser").equalsIgnoreCase("firefox")) {
 				driver = new FirefoxDriver();
